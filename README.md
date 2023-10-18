@@ -59,11 +59,9 @@ The contents are as follows:：
 
 MakefilePlease refer to the makefile in sdkdemo to modify it. In app\_XXXX Add a line to the makefile：USER\_LIB += $(LIBDIR)/sdkdemo
 
-1.
-# SDK instructions
+# 2. SDK instructions
 
-  1.
-## Key header file description
+## 2.1 Key header file description
 
 - StatusMngInterface.h
 
@@ -87,8 +85,7 @@ The definition of dongle interface is mainly used to judge whether the thread in
 
 -
 
-  1.
-## Interprocess communication
+## 2.2 Interprocess communication
 
 1. Register the events to be received. Refer to the event enumeration type：EVENT\_E，in the header file : EventMngInterface.h.
 2. Start event receiving, call the function startunixdomainlisten, and focus on the implementation of the event callback function SDK\_ domain\_ comm\_ proc； Be careful not to do blocking business in the event callback function；
@@ -119,8 +116,7 @@ return StartUnixDomainListen((char\*)tmpDomain, sdk\_domain\_comm\_proc, NULL);
 
 }
 
-  1.
-## Status acquisition
+## 2.3 Status acquisition
 
 The status is obtained mainly through the function GetStatus，the specific status to obtain needs to be determined according to enumeration STATUS\_E，header file：StatusMngInterface.h。
 
@@ -128,8 +124,7 @@ Status setting is mainly completed through the function setstatus，Reference st
 
 Note: when setting parameters, you need to obtain them first, then modify them, and then call the setting function to set them to avoid modifying other data contents。
 
-    1.
-### GPS data acquisition
+### 2.3.1 GPS data acquisition
 
 ### 2.3.2 IO data acquisition
 
@@ -137,30 +132,26 @@ GPSData\_s GPSData = {0};
 
 GetStatus(STATUS\_GPS, (void\*)&GPSData);
 
-    1.
-### Get dialing status
+### 2.3.3 Get dialing status
 
 WirelessStatus\_t m\_wireless;
 
 GetStatus(STATUS\_WIRELESS, (void\*)& m\_wireless);
 
-    1.
-### Get disk status
+### 2.3.4 Get disk status
 
 STATUS\_DISK\_STATUS\_t m\_disk;
 
 GetStatus(STATUS\_DISK\_STATUS, (void\*)& m\_disk);
 
-    1.
-### Get peripheral status（IO、ACC、Power,etc）
+### 2.3.5 Get peripheral status（IO、ACC、Power,etc）
 
 PeripheraStatus\_t m\_periphera;
 
 GetStatus (STATUS\_PERIPHERA, (void\*)& periphera);
 
-    1.
-  1.
-## Live video preview
+
+## 2.4 Live video preview
 
 ### 2.4.1 Start live preview
 
