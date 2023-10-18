@@ -1,42 +1,79 @@
 # MCxxx SDK User Manual V1.3
 
 1.	SDK Architecture introduction
+   
 1.1	SDK Introduction to publishing directory structure
+  	
 1.2	Compiler installation
+
 1.3 Compilation description
+
 1.4 How to add one's own process
+
 2.	SDK instructions
+
 2.1	Key header file description
+
 2.2	Interprocess communication
+
 2.3	Status acquisition
+
 2.3.1	GPS data acquisition
+
 2.3.2 IO data acquisition
+
 2.3.2	Get dialing status
+
 2.3.3	Get disk status
+
 2.3.4	Get peripheral status（IO、ACC、Power,etc）
+
 2.4	Live video preview
+
 2.4.1 Start live preview
+
 2.4.2 Stop live preview
+
 2.5 History Video Preview
+
 2.5.1 Search for file
+
 2.5.1 Play or download files
+
 2.6 Alarm distribution
+
 2.6.1 Alarm sending
+
 2.6.2 Alarm reception
+
 2.7 Serial peripheral
+
 2.8 AI alarm receiving and small video acquisition
+
 2.8.1 AI alarm registration
+
 2.8.2 Alarm event name and distribution event definition
+
 2.8.3 Alarm receiving and processing
+
 2.9 Video capture
+
 2.10 Process feed dog
+
 2.11 The customer realizes the 4G dial-up or WiFi connection process
+
 2.11.1 Get dialing parameters and WiFi parameters
+
 2.11.2 Set and get dial-up status and WiFi connection status
+
 2.11.3 implement scheme
+
 appendix 1     Start network thread reference code
+
 appendix 2     Alarm receiving reference code
+
 Appendix 3  Add a network thread to call SDK interface reference
+
 Appendix 4  SDK demo
 
 
