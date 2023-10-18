@@ -2139,7 +2139,7 @@ In our dialing parameter settings, turn off 4G dialing, so that our netmng will 
 
 **CConfig::Instance()-\>GetConfig(&JtBaseSet);**
 
-**int server\_Ex\_Total = ARRAY\_SIZE(JtBaseSet.protocolex);//****扩展的中心服务器个数**
+**int server\_Ex\_Total = ARRAY\_SIZE(JtBaseSet.protocolex);//****Number of Extanded Center Servers**
 
 **memset(ProcessName, 0, sizeof(ProcessName));**
 
