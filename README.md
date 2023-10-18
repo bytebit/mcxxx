@@ -5044,7 +5044,3 @@ In our dialing parameter settings, turn off 4G dialing, so that our netmng will 
 # Appendix 3 Add a network thread to call SDK interface reference
 
 # Appendix 4 SDK demo
-
-|
- | 0 |
-| --- | --- |
