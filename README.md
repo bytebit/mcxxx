@@ -1,18 +1,15 @@
 # MCxxx SDK User Manual V1.3
 
-1.
-# SDK Architecture introduction
+# 1. SDK Architecture introduction
 
-  1.
-## SDK Introduction to publishing directory structure
+## 1.1 SDK Introduction to publishing directory structure
 
 | Primary directory | Secondary directory |
 | --- | --- |
 | app\_T8008 | | |-- appfs # Application upgrade package directory| |-- bin # Store compiled temporary executable program| |-- hardware # Hardware related process source code| |-- lib # Store the compiled temporary static library and dynamic library| |-- release # Store boot, kernel, file system, application program and release upgrade program |
 | Public | | |-- avsdk # Video socket service for local real-time and historical video acquisition | |-- comm\_app # Common business libraries that can be called by different business processes| |-- comm\_convert # Video export conversion| |-- comm\_middle # General C library encapsulation, open source code interface, etc| |-- config # Equipment parameters| |-- net # Network service| | |-- dvrnet # TTX network lib| | |-- jt\_gps # jt808 network source code，jtgps process| | |-- ttx # ttx api interface，ttxnet process| |-- pubbusiness # Alarm and serial port peripherals| | |-- alarm # Alarm service| | |-- basic # Power management, timing and other basic business Libraries| | |-- interface # interface| | |-- serial # Serial peripherals| |-- pubio # GPIO | |-- recfile # | | |-- aacmng # AAC audio| | |-- asfmng # asf file| | |-- mp4mng # mp4 file| | |-- avimng # avi file| |-- storemng # recording store| | |-- disk\_access # recording access| | |-- disk\_record # recording | |-- tools # tools| | |-- GpioApp # GPIO process for debug| | |-- mkdosfs # format| | |-- sqlite3.8.6 # sqlite lib | |-- upgrade # upgrade| |-- uploadfile # FTP |
 
-  1.
-## Compiler installation
+## 1.2 Compiler installation
 
 Before compiling the SDK program released by us, you need to install the cross compiler first. Please operate in combination with the compiler installation instructions. Please use the user with root permission to install。
 
